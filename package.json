@@ -1,22 +1,20 @@
 {
   "name": "madmanserenade.github.io",
   "version": "1.0.0",
-  "description": "MadManSerenade GitHub Page",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Personal GitHub Page",
+  "homepage": "https://github.com/MadManSerenade/madmanserenade.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/MadManSerenade/madmanserenade.github.io/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MadManSerenade/madmanserenade.github.io.git"
   },
-  "author": "Muhammad Zaman",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MadManSerenade/madmanserenade.github.io/issues"
-  },
-  "homepage": "https://github.com/MadManSerenade/madmanserenade.github.io#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.4.16"
+  "author": "Muhammad Zaman",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
