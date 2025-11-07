@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "description": "Personal GitHub Page",
-    "homepage": "https://github.com/MadManSerenade/madmanserenade.github.io#readme",
+    "homepage": "madmanserenade.github.io",
     "bugs": {
         "url": "https://github.com/MadManSerenade/madmanserenade.github.io/issues"
     },
@@ -18,9 +18,12 @@
         "dev": "vite",
         "build": "tsc -b && vite build",
         "lint": "eslint .",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
+        "gh-pages": "^6.3.0",
         "react": "^19.1.1",
         "react-dom": "^19.1.1"
     },
