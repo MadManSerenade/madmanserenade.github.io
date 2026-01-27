@@ -1,0 +1,15 @@
+#showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4em;
+}
+
+#showcase > div {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+#showcase h1 {
+    text-align: center;
+}

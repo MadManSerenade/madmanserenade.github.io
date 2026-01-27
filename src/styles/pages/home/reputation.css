@@ -1,0 +1,10 @@
+#reputation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 4fr;
+    gap: 1em
+}
+
+#reputation > div {
+    height: 100%;
+    border: 1px solid black;
+}

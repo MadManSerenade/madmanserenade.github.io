@@ -1,0 +1,19 @@
+#philosophy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+#philosophy > div {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+#philosophy h1 {
+    text-align: center;
+}
+
+#philosophy p {
+    text-align: center;
+}

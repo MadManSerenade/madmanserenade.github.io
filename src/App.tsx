@@ -1,19 +1,14 @@
-// import Nav from './components/nav'
-// import Left from './components/left'
-import Main from './components/main'
-// import Right from './components/right'
-// import Footer from './components/footer'
+import Frame from './components/frame'
+import Page from './components/page'
+
 import './App.css'
 
 export default function App() {
 
     return (
         <>
-            {/* <Nav></Nav> */}
-            {/* <Left></Left> */}
-            <Main></Main>
-            {/* <Right></Right> */}
-            {/* <Footer></Footer> */}
+            <Frame></Frame>
+            <Page></Page>
         </>
     )
 }
