@@ -185,19 +185,3 @@
     letter-spacing: var(--tracking-normal);
   }
 }
-
-.bg-background {
-    background-color: var(--background);
-}
-
-.font-serif {
-    font-family: var(--font-serif) /* var(--font-serif) */;
-}
-
-.text-primary {
-    color: var(--primary);
-}
-
-.text-secondary {
-    color: var(--secondary);
-}
