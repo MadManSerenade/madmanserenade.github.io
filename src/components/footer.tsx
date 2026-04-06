@@ -54,9 +54,9 @@ const Footer = ({
     {
       title: "Gifting Portals",
       links: [
-        { text: "Venmo", url: "" },
-        { text: "CashApp", url: "" },
-        { text: "Throne", url: "" },
+        { text: "Venmo", url: "https://venmo.com/u/MadManSerenades" },
+        { text: "CashApp", url: "https://cash.app/$MadManSerenade" },
+        { text: "Throne", url: "https://throne.com/madmanserenade" },
       ]
     }
   ],
@@ -67,13 +67,13 @@ const Footer = ({
   ],
 }: Footer2Props) => {
   return (
-    <section className={cn("py-32", className)}>
-      <div className="container">
+    <section className={cn("bg-background py-16 lg:py-32", className)}>
+      <div className="container px-5 xl:px-10 lg:my-0">
         <footer>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
             <div className="col-span-2 mb-8 lg:mb-0 gap-2">
               <div className="flex items-center gap-2 lg:justify-start">
-                <Logo url={domain}>
+                <Logo url="http://MadManSerenade.GitHub.IO">
                   <div className="h-15 w-15 flex items-center justify-center rounded-full clip-circle">
                     <LogoImage
                       src={logo.src}

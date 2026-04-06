@@ -186,6 +186,14 @@
   }
 }
 
+.bg-background {
+    background-color: var(--background);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
 .clip-circle {
   clip-path: circle();
 }

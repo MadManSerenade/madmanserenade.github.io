@@ -65,7 +65,7 @@ const Hero = ({
           <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl font-serif font-semibold text-primary">
             {heading}
           </h2>
-          <h3 className="text-3xl sm:text-5xl lg:text-4xl xl:text-5xl font-semibold ">
+          <h3 className="text-2xl sm:text-5xl lg:text-4xl xl:text-5xl font-semibold ">
             {topSubheading}
             <br />
             {bottomSubheading}
