@@ -185,3 +185,7 @@
     letter-spacing: var(--tracking-normal);
   }
 }
+
+.clip-circle {
+  clip-path: circle();
+}
