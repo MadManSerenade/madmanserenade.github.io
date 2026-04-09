@@ -53,7 +53,7 @@ const Hero = ({
     },
   },
   image = {
-    src: "sri_yantra.svg",
+    src: "custom_sri_yantra.svg",
     alt: "Placeholder",
   },
   className,
@@ -121,8 +121,8 @@ const Hero = ({
         </div>
         <div className="relative z-10">
           <img
-            className="relative z-10 rounded-[25%] lg:w-[500px]"
-            src="sri_yantra.svg"
+            className="relative z-10 rounded-[25%] w-[500px]"
+            src="custom_sri_yantra.svg"
             alt="sri yantra"
           />
         </div>

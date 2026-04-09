@@ -30,7 +30,7 @@ interface Footer2Props {
 const Footer = ({
   domain = "MadManSerenade.GitHub.IO",
   logo = {
-    src: "sri_yantra.svg",
+    src: "custom_sri_yantra.svg",
     alt: "blocks for shadcn/ui",
     title: "Zenith Impetus",
     url: `https://madmanserenade.github.io`,
@@ -44,6 +44,24 @@ const Footer = ({
         { text: "GitHub", url: "https://github.com/MadManSerenade" },
       ]
     },
+    {
+      title: "",
+      links: [
+        // { text: "Skool", url: ""},
+        { text: "Passes", url: "https://www.passes.com/MadManSerenade"},
+        { text: "Cameo", url: "https://www.cameo.com/MadManSerenade"},
+      ]
+    },
+    // {
+    //   title: "",
+    //   links: [
+    //     // { text: "Skool", url: ""},
+    //     { text: "SubStack", url: ""},
+    //     { text: "Medium", url: "https://medium.com/@MadManSerenade"},
+    //     { text: "Wattpad", url: "https://www.wattpad.com/user/ManManSerenade"},
+    //     { text: "Vocal", url: "https://vocal.media/authors/MadManSerenade"},
+    //   ]
+    // },
     {
       title: "Social",
       links: [
