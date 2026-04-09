@@ -1,0 +1,7 @@
+.container {
+  margin: 0 auto;
+}
+
+.clip-circle {
+  clip-path: circle();
+}
