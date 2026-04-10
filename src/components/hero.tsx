@@ -59,13 +59,13 @@ const Hero = ({
   className,
 }: HeroProps) => {
   return (
-    <section className={cn("bg-background py-16 lg:py-20", className)}>
-      <div className="container flex flex-col items-center gap-10 px-5 xl:px-10 lg:my-0 lg:flex-row">
-        <div className="flex flex-col gap-7 lg:w-2/3">
+    <section className={cn("py-8 lg:py-16", className)}>
+      <div className="container flex flex-col items-center gap-8 p-8 xl:p-12 lg:my-0 lg:flex-row">
+        <div className="flex flex-col gap-8 lg:w-2/3">
           <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl font-serif font-semibold text-primary">
             {heading}
           </h2>
-          <h3 className="text-2xl sm:text-5xl lg:text-4xl xl:text-5xl font-semibold ">
+          <h3 className="text-2xl sm:text-4xl lg:text-4xl font-semibold ">
             {topSubheading}
             <br />
             {bottomSubheading}

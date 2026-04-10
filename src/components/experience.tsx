@@ -1,0 +1,106 @@
+import { Download } from "lucide-react";
+
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+
+interface ExperienceItem {
+  period: string;
+  title: string;
+  description: string;
+  company: string;
+  logo: string;
+}
+
+interface ExperienceProps {
+  title?: string;
+  buttonText?: string;
+  buttonUrl?: string;
+  experience?: ExperienceItem[];
+  className?: string;
+}
+
+const Experience = ({
+  title = "Experience",
+  buttonText = "Download CV",
+  buttonUrl = "#",
+  experience = [
+    {
+      period: "Sep 2025 - Now",
+      title: "Sr. Software Engineer",
+      description:
+        "Leading development of scalable web applications using React, TypeScript, and Node.js. Mentoring junior developers and implementing best practices.",
+      company: "Google",
+      logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/google-icon.svg",
+    },
+    {
+      period: "Mar 2023 - Aug 2025",
+      title: "Full Stack Developer",
+      description:
+        "Built and maintained multiple client websites and e-commerce platforms. Collaborated with design teams to implement pixel-perfect UI/UX designs.",
+      company: "Microsoft",
+      logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/microsoft-icon.svg",
+    },
+    {
+      period: "Jan 2021 - Feb 2023",
+      title: "Frontend Developer",
+      description:
+        "Developed responsive web applications using modern JavaScript frameworks. Optimized performance and accessibility across multiple projects.",
+      company: "Apple",
+      logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/apple-icon.svg",
+    },
+    {
+      period: "Jun 2019 - Dec 2020",
+      title: "Junior Developer",
+      description:
+        "Assisted in building web applications and learning modern development practices. Contributed to team projects and code reviews.",
+      company: "Netflix",
+      logo: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/netflix-icon.svg",
+    },
+  ],
+  className,
+}: ExperienceProps) => {
+  return (
+    <section className={cn("py-8 lg:py-16", className)}>
+      <div className="container flex flex-col gap-8 p-8 xl:p-12 lg:my-0">
+        <div className="flex w-full items-end justify-between">
+          <h1 className="text-6xl leading-tight uppercase">{title}</h1>
+          {/* <Button asChild variant="ghost" size="lg" className="font-semibold">
+            <a href={buttonUrl}>
+              {buttonText} <Download className="size-4" />
+            </a>
+          </Button> */}
+        </div>
+        <div className="mx-auto max-w-6xl space-y-12">
+          <ul>
+            {experience.map((exp, index) => (
+              <li
+                key={index}
+                className="flex flex-col justify-between border-b py-10 md:flex-row"
+              >
+                <div className="max-w-lg text-xl tracking-tighter lg:w-1/3">
+                  {exp.period}
+                </div>
+                <div className="lg:w-1/3">
+                  <h2 className="mb-4 text-2xl font-semibold tracking-tighter">
+                    {exp.title}
+                  </h2>
+                  <p className="text-foreground/50">{exp.description}</p>
+                </div>
+                <div className="flex items-start justify-end gap-3 text-end lg:w-1/4">
+                  <img
+                    src={exp.logo}
+                    alt={exp.company}
+                    className="size-6 dark:invert"
+                  />
+                  {exp.company}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export { Experience };

@@ -9,7 +9,7 @@ interface MenuItem {
   }[];
 }
 
-interface Footer2Props {
+interface FooterProps {
   domain?: string;
   logo?: {
     url: string;
@@ -45,7 +45,7 @@ const Footer = ({
       ]
     },
     {
-      title: "",
+      title: "Services",
       links: [
         // { text: "Skool", url: ""},
         { text: "Passes", url: "https://www.passes.com/MadManSerenade"},
@@ -83,10 +83,10 @@ const Footer = ({
     { text: "Terms and Conditions", url: "#" },
     { text: "Privacy Policy", url: "#" },
   ],
-}: Footer2Props) => {
+}: FooterProps) => {
   return (
     <section className={cn("bg-background py-16 lg:py-32", className)}>
-      <div className="container px-5 xl:px-10 lg:my-0">
+      <div className="container flex flex-col items-center gap-8 p-8 xl:p-12 lg:my-0 lg:flex-row">
         <footer>
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
             <div className="col-span-2 mb-8 lg:mb-0 gap-2">
