@@ -60,7 +60,7 @@ const Experience = ({
   className,
 }: ExperienceProps) => {
   return (
-    <section className={cn("py-8 lg:py-16", className)}>
+    <section className={cn("py-8 lg:py-16 2xl:py-32", className)}>
       <div className="container flex flex-col gap-8 p-8 xl:p-12 lg:my-0">
         <div className="flex w-full items-end justify-between">
           <h1 className="text-6xl leading-tight uppercase">{title}</h1>

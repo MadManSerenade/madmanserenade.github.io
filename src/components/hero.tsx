@@ -59,24 +59,24 @@ const Hero = ({
   className,
 }: HeroProps) => {
   return (
-    <section className={cn("py-8 lg:py-16", className)}>
+    <section className={cn("py-8 lg:py-16 2xl:py-32", className)}>
       <div className="container flex flex-col items-center gap-8 p-8 xl:p-12 lg:my-0 lg:flex-row">
         <div className="flex flex-col gap-8 lg:w-2/3">
-          <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl font-serif font-semibold text-primary">
+          <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-serif font-semibold text-primary">
             {heading}
           </h2>
-          <h3 className="text-2xl sm:text-4xl lg:text-4xl font-semibold ">
+          <h3 className="text-2xl sm:text-4xl lg:text-4xl 2xl:text-6xl font-semibold ">
             {topSubheading}
             <br />
             {bottomSubheading}
           </h3>
-          <p className="sm:text-lg lg:text-xl">
+          <p className="sm:text-lg lg:text-xl 2xl:text-2xl">
             {mission}
           </p>
-          <p className="sm:text-lg lg:text-xl">
+          <p className="sm:text-lg lg:text-xl 2xl:text-2xl">
             {process}
           </p>
-          <p className="sm:text-lg lg:text-xl">
+          <p className="sm:text-lg lg:text-xl 2xl:text-2xl">
             {devotional} 
             <span className="font-serif text-primary">
               {emphasis}

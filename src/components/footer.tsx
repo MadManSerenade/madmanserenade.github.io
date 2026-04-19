@@ -85,9 +85,9 @@ const Footer = ({
   ],
 }: FooterProps) => {
   return (
-    <section className={cn("bg-background py-16 lg:py-32", className)}>
+    <section className={cn("py-8 lg:py-16 2xl:py-32", className)}>
       <div className="container flex flex-col items-center gap-8 p-8 xl:p-12 lg:my-0 lg:flex-row">
-        <footer>
+        <footer className="w-full">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
             <div className="col-span-2 mb-8 lg:mb-0 gap-2">
               <div className="flex items-center gap-2 lg:justify-start">
