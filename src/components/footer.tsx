@@ -66,7 +66,7 @@ const Footer = ({
     {
       title: "Gifting Portals",
       links: [
-        { text: "Venmo", url: "https://venmo.com/u/MadManSerenades" },
+        { text: "Venmo", url: "https://venmo.com/u/MadManSerenade" },
         { text: "CashApp", url: "https://cash.app/$MadManSerenade" },
         { text: "Throne", url: "https://throne.com/madmanserenade" },
       ]
