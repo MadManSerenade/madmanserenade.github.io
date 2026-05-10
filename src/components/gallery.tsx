@@ -143,7 +143,7 @@ const Gallery = ({
               },
             },
           }}
-          className="relative w-full max-w-full md:start-[-1rem]"
+          className="relative w-full max-w-full md:-inset-s-4"
         >
           <CarouselContent className="hide-scrollbar w-full max-w-full md:-me-4 md:ms-8 2xl:me-[max(0rem,calc(50vw-700px-1rem))] 2xl:ms-[max(8rem,calc(50vw-700px+1rem))]">
             {items.map((item) => (
@@ -165,7 +165,7 @@ const Gallery = ({
                       </div>
                     </div>
                   </div>
-                  <div className="mb-2 line-clamp-3 pt-4 text-lg font-medium break-words md:mb-3 md:pt-4 md:text-xl lg:pt-4 lg:text-2xl">
+                  <div className="mb-2 line-clamp-3 pt-4 text-lg font-medium wrap-break-word md:mb-3 md:pt-4 md:text-xl lg:pt-4 lg:text-2xl">
                     {item.title}
                   </div>
                   <div className="mb-8 line-clamp-2 text-sm text-muted-foreground md:mb-12 md:text-base lg:mb-9">
