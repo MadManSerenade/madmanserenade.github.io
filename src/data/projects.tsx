@@ -1,71 +1,58 @@
-import creator from "@/data/projects/creator"
-import leadership from "@/data/projects/leadership"
+import activism from "@/data/projects/activism"
+import community from "@/data/projects/community"
+import creator from "@/data/projects/creativity"
+import fitness from "@/data/projects/fitness"
+import governance from "@/data/projects/governance"
+import history from "@/data/projects/history"
+import intelligences from "@/data/projects/intelligences"
+import islamicStudies from "@/data/projects/islamic-studies"
 import omnipath from "@/data/projects/omnimath"
+import polyglot from "@/data/projects/polyglot"
+import sovereignty from "@/data/projects/sovereignty"
+import spirituality from "@/data/projects/spirituality"
+
+export interface MilestoneItem {
+  name?: string;
+  image?: string;
+  description?: string;
+  isComplete?: boolean;
+}
 
 export interface ProjectItem {
-  title?: string;
-  img?: string;
-  year?: string;
-  categories?: string[];
+  name?: string;
+  priority?: number;
   url?: string;
-  description?: string;
+  purpose?: string;
+  tldr?: string;
+  image?: string;
+  categories?: string[];
+  milestones?: MilestoneItem[];
+  markdown?: string;
 }
 
 export interface ProjectItemReduced {
-  title?: string;
-  img?: string;
-  year?: string;
-  categories?: string[];
+  name?: string;
+  priority?: number;
   url?: string;
+  purpose?: string;
+  tldr?: string;
+  image?: string;
+  categories?: string[];
 }
 
-const projects = [
-    {
-      title: "Modern Concrete Pavilion",
-      img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/Modern Architectural Elegance at Twilight.png",
-      year: "2025",
-      categories: ["Architecture",],
-      url: "#",
-    },
-    {
-      title: "Colorful Urban Living",
-      img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/Modernist Architecture in Lush Forest.png",
-      year: "2025",
-      categories: ["Urban Design",],
-      url: "#",
-    },
-    {
-      title: "Minimalist Home Retreat",
-      img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw12.jpeg",
-      year: "2025",
-      categories: ["Interior",],
-      url: "#",
-    },
-    {
-      title: "Urban Concrete House",
-      img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/tiny-home/erik-mclean-g3U7sqtdJ1w-unsplash.jpg",
-      year: "2025",
-      categories: ["Product Design",],
-      url: "#",
-    },
-    {
-      title: "Luxury Concrete Box",
-      img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw14.jpeg",
-      year: "2025",
-      categories: ["Residential",],
-      url: "#",
-    },
-    {
-      title: "Glasshouse in Nature",
-      img: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw16.jpeg",
-      year: "2025",
-      categories: ["Sustainable Design",],
-      url: "#",
-    },
-]
+const projects = []
 
+projects.push(activism)
+projects.push(community)
 projects.push(creator)
-projects.push(leadership)
+projects.push(fitness)
+projects.push(governance)
+projects.push(history)
+projects.push(intelligences)
+projects.push(islamicStudies)
 projects.push(omnipath)
+projects.push(polyglot)
+projects.push(sovereignty)
+projects.push(spirituality)
 
-export default projects
+export { projects as projectsData }

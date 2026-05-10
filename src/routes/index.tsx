@@ -2,7 +2,7 @@
 import { Experience } from "@/components/experience";
 // import { Gallery } from "@/components/gallery";
 import { Hero } from "@/components/hero";
-import { Projects } from "@/components/projects";
+import { ProjectsReduced } from "@/components/projects";
 // import { Services } from "@/components/services";
 
 import { createFileRoute } from "@tanstack/react-router";
@@ -16,9 +16,9 @@ export function Home() {
     <>
       <Hero />
       {/* <Services /> */}
-      <Projects />
+      <ProjectsReduced />
       {/* <Gallery /> */}
-      <Experience />
+      {/* <Experience /> */}
       {/* <Contact /> */}
     </>
   )

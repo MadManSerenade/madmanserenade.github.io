@@ -42,31 +42,25 @@ const Footer = ({
       title: "Professional",
       links: [
         { text: "GitHub", url: "https://github.com/MadManSerenade" },
+        { text: "SubStack", url: "https://substack.com/@madmanserenade" },
+        { text: "LinkedIn", url: "https://www.linkedin.com/in/madmanserenade"}
       ]
     },
     {
       title: "Services",
       links: [
         // { text: "Skool", url: ""},
+        { text: "Calendly", url: "https://calendly.com/mnez-creations/discovery-call"},
         { text: "Passes", url: "https://www.passes.com/MadManSerenade"},
         { text: "Cameo", url: "https://www.cameo.com/MadManSerenade"},
       ]
     },
-    // {
-    //   title: "",
-    //   links: [
-    //     // { text: "Skool", url: ""},
-    //     { text: "SubStack", url: ""},
-    //     { text: "Medium", url: "https://medium.com/@MadManSerenade"},
-    //     { text: "Wattpad", url: "https://www.wattpad.com/user/ManManSerenade"},
-    //     { text: "Vocal", url: "https://vocal.media/authors/MadManSerenade"},
-    //   ]
-    // },
     {
       title: "Social",
       links: [
         { text: "TikTok", url: "https://www.tiktok.com/@madmanserenade" },
         { text: "Instagram", url: "https://www.instagram.com/madmanserenade" },
+        // { text: "YouTube", url: ""},
       ],
     },
     {
