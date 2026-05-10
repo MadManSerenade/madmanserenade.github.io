@@ -22,7 +22,7 @@ interface ContactProps {
 
 const Contact = ({
   title = "Contact Us",
-  description = "Have a question or need assistance? Reach out through any of the channels below.",
+  // description = "Have a question or need assistance? Reach out through any of the channels below.",
   emailLabel = "Email",
   emailDescription = "We respond to all emails within 24 hours.",
   email = "hello@example.com",

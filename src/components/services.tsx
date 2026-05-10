@@ -1,6 +1,6 @@
 "use client";
 
-import { Code, Cog, PenTool, Shrub } from "lucide-react";
+// import { Code, Cog, PenTool, Shrub } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 

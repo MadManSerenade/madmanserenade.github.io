@@ -1,6 +1,6 @@
-import { Download } from "lucide-react";
+// import { Download } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface ExperienceItem {
@@ -21,8 +21,8 @@ interface ExperienceProps {
 
 const Experience = ({
   title = "Experience",
-  buttonText = "Download CV",
-  buttonUrl = "#",
+  // buttonText = "Download CV",
+  // buttonUrl = "#",
   experience = [
     {
       period: "Sep 2025 - Now",

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -31,8 +31,8 @@ interface GalleryProps {
 
 const Gallery = ({
   title = "Gallery",
-  demoUrl = "https://www.shadcnblocks.com",
-  demoText = "Book a demo",
+  // demoUrl = "https://www.shadcnblocks.com",
+  // demoText = "Book a demo",
   readMore = "Read more",
   items = [
     {

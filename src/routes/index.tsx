@@ -1,5 +1,5 @@
 // import { Contact } from "@/components/contact";
-import { Experience } from "@/components/experience";
+// import { Experience } from "@/components/experience";
 // import { Gallery } from "@/components/gallery";
 import { Hero } from "@/components/hero";
 import { ProjectsReduced } from "@/components/projects";

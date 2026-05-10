@@ -32,7 +32,7 @@ export interface ProjectItem {
 
 export interface ProjectItemReduced {
   name?: string;
-  priority?: number;
+  priority?: number
   url?: string;
   purpose?: string;
   tldr?: string;
@@ -40,7 +40,7 @@ export interface ProjectItemReduced {
   categories?: string[];
 }
 
-const projects = []
+const projects: ProjectItem[] = []
 
 projects.push(activism)
 projects.push(community)
