@@ -1,7 +1,7 @@
-// import { ArrowUpRight, Atom, Flower, Route, Shell } from "lucide-react";
+// import { ArrowUpRight, Atom, Flower, Route, Shell } from "lucide-react"
 
-// import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+// import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 
 interface HeroProps {
   heading?: string;
@@ -128,7 +128,7 @@ const Hero = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export { Hero };
+export { Hero }

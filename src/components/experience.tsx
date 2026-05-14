@@ -1,7 +1,7 @@
-// import { Download } from "lucide-react";
+// import { Download } from "lucide-react"
 
-// import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+// import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 
 interface ExperienceItem {
   period: string;
@@ -100,7 +100,7 @@ const Experience = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export { Experience };
+export { Experience }

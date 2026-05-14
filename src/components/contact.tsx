@@ -92,7 +92,7 @@ const Contact = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export { Contact };
+export { Contact }

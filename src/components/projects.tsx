@@ -1,10 +1,10 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { projectsData } from "@/data/projects";
-import { type ProjectItem, type ProjectItemReduced } from "@/data/projects";
-import { Badge } from "./ui/badge";
+import { motion } from "framer-motion"
+import { cn } from "@/lib/utils"
+import { projectsData } from "@/data/projects"
+import { type ProjectItem, type ProjectItemReduced } from "@/data/projects"
+import { Badge } from "./ui/badge"
 
 interface ProjectsProps {
   title?: string;
@@ -23,7 +23,6 @@ const Projects = ({
   projects = projectsData,
   className
 }: ProjectsProps) => {
-  console.log(projects)
   return (
     <section className={cn("py-8 lg:py-16 2xl:py-32", className)}>
       <div className="container flex flex-col gap-8 p-8 xl:p-12 lg:my-0">
@@ -68,7 +67,7 @@ const Projects = ({
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 const ProjectsReduced = ({
@@ -120,7 +119,7 @@ const ProjectsReduced = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export { Projects, ProjectsReduced };
+export { Projects, ProjectsReduced }

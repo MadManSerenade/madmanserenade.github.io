@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { ArrowLeft, ArrowRight } from "lucide-react"
+import { useEffect, useState } from "react"
 
-import { Button } from "@/components/ui/button";
-import type { CarouselApi } from "@/components/ui/carousel";
+import { Button } from "@/components/ui/button"
+import type { CarouselApi } from "@/components/ui/carousel"
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import { cn } from "@/lib/utils";
+} from "@/components/ui/carousel"
+import { cn } from "@/lib/utils"
 
 interface GalleryItem {
   id: string;
@@ -83,23 +83,23 @@ const Gallery = ({
   ],
   className,
 }: GalleryProps) => {
-  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
-  const [canScrollPrev, setCanScrollPrev] = useState(false);
-  const [canScrollNext, setCanScrollNext] = useState(false);
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>()
+  const [canScrollPrev, setCanScrollPrev] = useState(false)
+  const [canScrollNext, setCanScrollNext] = useState(false)
   useEffect(() => {
     if (!carouselApi) {
-      return;
+      return
     }
     const updateSelection = () => {
-      setCanScrollPrev(carouselApi.canScrollPrev());
-      setCanScrollNext(carouselApi.canScrollNext());
-    };
-    updateSelection();
-    carouselApi.on("select", updateSelection);
+      setCanScrollPrev(carouselApi.canScrollPrev())
+      setCanScrollNext(carouselApi.canScrollNext())
+    }
+    updateSelection()
+    carouselApi.on("select", updateSelection)
     return () => {
-      carouselApi.off("select", updateSelection);
-    };
-  }, [carouselApi]);
+      carouselApi.off("select", updateSelection)
+    }
+  }, [carouselApi])
   return (
     <section className={cn("py-8 lg:py-16 2xl:py-32", className)}>
       <div className="container">
@@ -111,7 +111,7 @@ const Gallery = ({
                 size="icon"
                 variant="outline"
                 onClick={() => {
-                  carouselApi?.scrollPrev();
+                  carouselApi?.scrollPrev()
                 }}
                 disabled={!canScrollPrev}
                 className="disabled:pointer-events-auto"
@@ -122,7 +122,7 @@ const Gallery = ({
                 size="icon"
                 variant="outline"
                 onClick={() => {
-                  carouselApi?.scrollNext();
+                  carouselApi?.scrollNext()
                 }}
                 disabled={!canScrollNext}
                 className="disabled:pointer-events-auto"
@@ -182,7 +182,7 @@ const Gallery = ({
         </Carousel>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export { Gallery };
+export { Gallery }

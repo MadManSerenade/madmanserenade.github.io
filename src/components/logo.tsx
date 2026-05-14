@@ -1,15 +1,15 @@
-"use client";
+"use client"
 
-import { Download } from "lucide-react";
+import { Download } from "lucide-react"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 import {
   ContextMenu,
   ContextMenuContent,
   ContextMenuItem,
   ContextMenuTrigger,
-} from "@/components/ui/context-menu";
+} from "@/components/ui/context-menu"
 
 interface LogoProps extends React.HTMLAttributes<HTMLAnchorElement> {
   url: string;
@@ -45,22 +45,22 @@ const LogoBrandDownload = ({
 }: LogoBrandDownloadProps) => {
   const handleDownload = async (file: LogoBrandDownloadProps["files"][0]) => {
     try {
-      const response = await fetch(file.path);
-      if (!response.ok) throw new Error(`Failed to fetch ${file.name}`);
+      const response = await fetch(file.path)
+      if (!response.ok) throw new Error(`Failed to fetch ${file.name}`)
 
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = file.name;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
+      const blob = await response.blob()
+      const url = window.URL.createObjectURL(blob)
+      const link = document.createElement("a")
+      link.href = url
+      link.download = file.name
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+      window.URL.revokeObjectURL(url)
     } catch (error) {
-      console.error("Failed to download file:", error);
+      console.error("Failed to download file:", error)
     }
-  };
+  }
 
   return (
     <ContextMenu>
@@ -80,8 +80,8 @@ const LogoBrandDownload = ({
         ))}
       </ContextMenuContent>
     </ContextMenu>
-  );
-};
+  )
+}
 
 const Logo = ({ url, className, children, ...props }: LogoProps) => {
   return (
@@ -92,12 +92,12 @@ const Logo = ({ url, className, children, ...props }: LogoProps) => {
     >
       {children}
     </a>
-  );
-};
+  )
+}
 
 const LogoImage = ({ src, alt, className, ...props }: LogoImageProps) => (
   <img src={src} alt={alt} className={cn("block h-8", className)} {...props} />
-);
+)
 
 const LogoImageMobile = ({ src, alt, className, ...props }: LogoImageProps) => (
   <img
@@ -106,7 +106,7 @@ const LogoImageMobile = ({ src, alt, className, ...props }: LogoImageProps) => (
     className={cn("flex h-8 md:hidden", className)}
     {...props}
   />
-);
+)
 
 const LogoImageDesktop = ({
   src,
@@ -120,7 +120,7 @@ const LogoImageDesktop = ({
     className={cn("hidden h-8 md:flex", className)}
     {...props}
   />
-);
+)
 
 const LogoText = ({ children, className, ...props }: LogoTextProps) => (
   <span
@@ -129,7 +129,7 @@ const LogoText = ({ children, className, ...props }: LogoTextProps) => (
   >
     {children}
   </span>
-);
+)
 
 const LogoTextMobile = ({ children, className, ...props }: LogoTextProps) => (
   <span
@@ -141,7 +141,7 @@ const LogoTextMobile = ({ children, className, ...props }: LogoTextProps) => (
   >
     {children}
   </span>
-);
+)
 
 const LogoTextDesktop = ({ children, className, ...props }: LogoTextProps) => (
   <span
@@ -153,7 +153,7 @@ const LogoTextDesktop = ({ children, className, ...props }: LogoTextProps) => (
   >
     {children}
   </span>
-);
+)
 
 export {
   Logo,
@@ -164,4 +164,4 @@ export {
   LogoText,
   LogoTextDesktop,
   LogoTextMobile,
-};
+}

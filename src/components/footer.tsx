@@ -1,5 +1,5 @@
-import { Logo, LogoImage, LogoText } from "@/components/logo";
-import { cn } from "@/lib/utils";
+import { Logo, LogoImage, LogoText } from "@/components/logo"
+import { cn } from "@/lib/utils"
 
 interface MenuItem {
   title: string;
@@ -30,7 +30,7 @@ interface FooterProps {
 const Footer = ({
   domain = "MadManSerenade.GitHub.IO",
   logo = {
-    src: "custom_sri_yantra.svg",
+    src: "/custom_sri_yantra.svg",
     alt: "blocks for shadcn/ui",
     title: "Zenith Impetus",
     url: `https://madmanserenade.github.io`,
@@ -85,7 +85,7 @@ const Footer = ({
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
             <div className="col-span-2 mb-8 lg:mb-0 gap-2">
               <div className="flex items-center gap-2 lg:justify-start">
-                <Logo url="http://MadManSerenade.GitHub.IO">
+                <Logo url="/">
                   <div className="h-15 w-15 flex items-center justify-center rounded-full clip-circle">
                     <LogoImage
                       src={logo.src}
@@ -128,7 +128,7 @@ const Footer = ({
         </footer>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export { Footer };
+export { Footer }

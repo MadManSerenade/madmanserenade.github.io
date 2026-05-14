@@ -4,12 +4,10 @@ import { createRoot } from "react-dom/client"
 import "./globals.css"
 import "./utils.css"
 import { ThemeProvider } from "@/components/theme-provider.tsx"
-import { RouterProvider, createHashHistory, createRouter } from "@tanstack/react-router"
+import { RouterProvider, createRouter } from "@tanstack/react-router"
 import { routeTree } from "./routeTree.gen"
 
-const hashHistory = createHashHistory()
-
-const router = createRouter({ routeTree, history: hashHistory })
+const router = createRouter({ routeTree })
 
 declare module "@tanstack/react-router" {
   interface Register {

@@ -1,9 +1,11 @@
 import { Footer } from "@/components/footer"
+import NavBar from "@/components/nav-bar"
 import { createRootRoute, Outlet } from "@tanstack/react-router"
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools"
 
 const RootLayout = () => (
     <>
+        <NavBar />
         {/* <nav>
             <Link to="/">
                 Home

@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-// import { Code, Cog, PenTool, Shrub } from "lucide-react";
+// import { Code, Cog, PenTool, Shrub } from "lucide-react"
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 interface ServiceItem {
   icon?: any;
@@ -98,7 +98,7 @@ const Services = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export { Services };
+export { Services }
