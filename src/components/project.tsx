@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
-import type { ProjectItem } from "@/data/projects";
+import { type ProjectItem } from "@/data/projects";
 
 interface ProjectProps extends React.HTMLAttributes<HTMLAnchorElement> {
   project: ProjectItem,
