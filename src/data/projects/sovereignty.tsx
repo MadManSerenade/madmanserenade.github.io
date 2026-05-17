@@ -7,7 +7,7 @@ const project = {
     image: "/projects/sovereignty-main.png",
     categories: ["spiritual", "mental", "energetic"],
     milestones: [],
-    markdown: ""
+    markdown: "sovereignty"
 }
 
 export default project

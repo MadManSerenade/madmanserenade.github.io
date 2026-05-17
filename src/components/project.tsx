@@ -1,14 +1,17 @@
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
 import { type ProjectItem } from "@/data/projects";
+import { MDXProvider } from '@mdx-js/react';
 
 interface ProjectProps extends React.HTMLAttributes<HTMLAnchorElement> {
   project: ProjectItem,
+  Markdown: any,
   className?: string;
 }
 
 function Project({
   project,
+  Markdown,
   className
 }: ProjectProps) {
   return (
@@ -32,6 +35,9 @@ function Project({
             className="h-100 w-100 object-cover self-center transition-transform duration-500 ease-in-out group-hover:scale-105"
           />
           <p>TL;DR: {project.tldr}</p>
+          <MDXProvider>
+            <Markdown />
+          </MDXProvider>
         </div>
       </div>
     </section>
